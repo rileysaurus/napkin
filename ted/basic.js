@@ -2,7 +2,7 @@
 ted.describe('basic', function(info) {
 
   function foo() {
-    return ted.Promise.delay(30 * 1000);
+    return ted.Promise.resolve().delay(30 * 1000);
   }
 
   describe('Test A', function() {
