@@ -4,7 +4,7 @@ ted.describe('basic', function(info) {
   function foo() {
     return ted.Promise.try(function() {
       var n = ted._.random(1, 100);
-      if (n >== 90) {
+      if (n >= 90) {
         throw new Error(n);
       }
     })
