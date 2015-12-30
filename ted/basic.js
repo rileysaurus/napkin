@@ -4,10 +4,11 @@ ted.describe('basic', function(info) {
   function foo() {
     return ted.Promise.try(function() {
       var n = _.random(1, 100);
-      if (n >= 95) {
+      if (n > 95) {
         throw new Error(n);
       }
-    }).delay(10 * 1000);
+    })
+    .delay(10 * 1000);
   }
 
   describe('Test A', function() {
